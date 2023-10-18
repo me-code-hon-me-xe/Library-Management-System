@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.List;
 
 public class LibraryManager {
-    public static List<Book> books;
-    public static List<LibraryTransaction> transactions;
+    private List<Book> books;
+    private List<LibraryTransaction> transactions;
 
     public static void addBook(Book book){}
 
