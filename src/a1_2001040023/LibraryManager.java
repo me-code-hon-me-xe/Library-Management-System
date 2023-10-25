@@ -1,5 +1,6 @@
 package a1_2001040023;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -7,17 +8,26 @@ public class LibraryManager {
     private List<Book> books;
     private List<LibraryTransaction> transactions;
 
-    public static void addBook(Book book){}
+    public LibraryManager() {
+        books = new ArrayList<>();
+        transactions = new ArrayList<>();
+    }
 
-    public static List<LibraryTransaction> getCheckedOutBooks(Patron patron){
+    public void addBook(Book book) {
+
+    }
+
+    public List<LibraryTransaction> getCheckedOutBooks(Patron patron) {
         return null;
     }
 
-    public static void returnBook(LibraryTransaction transaction, Date returnDate){}
+    public void returnBook(LibraryTransaction transaction, Date returnDate) {
+    }
 
-    public static List<LibraryTransaction> getOverdueBooks(){
+    public List<LibraryTransaction> getOverdueBooks() {
         return null;
     }
 
-    public static void sort(){}
+    public void sort() {
+    }
 }

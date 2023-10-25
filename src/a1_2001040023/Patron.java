@@ -1,6 +1,5 @@
 package a1_2001040023;
 
-import com.sun.source.tree.ReturnTree;
 import common.PatronType;
 
 import java.text.ParseException;
@@ -53,7 +52,7 @@ public class Patron {
 
 
     public String generatePatronID(){
-        String patronID = String.format("%03d",patronCounter);
+        String patronID = String.format("%s%03d", "P", patronCounter);
         patronCounter++;
         return patronID;
     }
